@@ -1,0 +1,10 @@
+import { mount } from '@cypress/react'
+import { {{pascalCase name}} } from '.'
+
+const testId = 'pauloluan-{{kebabCase name}}-id'
+
+it('when a <{{pascalCase name}} /> is rendered, should be visible', () => {
+  mount(<{{pascalCase name}} />)
+  const foundComponent = cy.get(`[data-testid=${testId}]`)
+  foundComponent.should('be.visible')
+})

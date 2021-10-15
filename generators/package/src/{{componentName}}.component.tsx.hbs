@@ -1,0 +1,16 @@
+import * as S from './{{kebabCase componentName}}.styles'
+import { {{pascalCase componentName}}Props as Bootstrap{{pascalCase componentName}}Props } from 'react-bootstrap/{{pascalCase componentName}}' <- IMPORTE AS PROPS DO SEU COMPONENTE
+
+export interface {{pascalCase componentName}}Props extends Bootstrap{{pascalCase componentName}}Props {
+  testId?: string
+}
+
+export const {{pascalCase componentName}} = ({ testId = 'pauloluan-{{kebabCase componentName}}-id', ...props }: {{pascalCase componentName}}Props) => {
+  return (
+    <>
+      <S.{{pascalCase componentName}} data-testid={testId} {...props}>
+        Body...
+      </S.{{pascalCase componentName}}>
+    </>
+  )
+}
