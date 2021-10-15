@@ -1,5 +1,6 @@
 {
   "name": "@pauloluan/single-spa",
+  "version": "0.0.1",
   "scripts": {
     "start": "webpack serve",
     "dev": "webpack serve --env standalone",
@@ -56,7 +57,8 @@
     "@types/webpack-env": "^1.16.2",
     "single-spa": "^5.9.3",
     "@types/react": "^17.0.19",
-    "@types/react-dom": "^17.0.9"
+    "@types/react-dom": "^17.0.9",
+    "@pauloluan/shared-ui": "*"
   },
   "types": "dist/pauloluan-single-spa.d.ts"
 }
