@@ -1,12 +1,12 @@
-## pauloluan (FrontEnd Monorepo)
+## pauloluan (Shared UI Monorepo)
 
 [![ci][ci-image]][ci-url]
 
-[ci-image]: https://github.com/GSWSoftware/front-monorepo/actions/workflows/ci.yml/badge.svg
-[ci-url]: https://github.com/GSWSoftware/front-monorepo/actions/workflows/ci.yml
+[ci-image]: https://github.com/pauloluan/shared-ui/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/pauloluan/shared-ui/actions/workflows/ci.yml
 ## 💡 Introduction
 
-pauloluan FrontEnd Monorepo - WELCOME TO THE FUTURE.
+PauloLuan Shared UI Monorepo
 
 <span id="top"></span>
 
@@ -26,7 +26,7 @@ pauloluan FrontEnd Monorepo - WELCOME TO THE FUTURE.
 ## 🚀 Install
 
 ```sh
-$ git clone https://github.com/gswsoftware/front-monorepo.git
+$ git clone https://github.com/pauloluan/shared-ui.git
 ```
 
 Just type install and the app magically will execute the lerna bootstrap command and the apps are gonna build for the first time:
