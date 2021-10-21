@@ -1,6 +1,6 @@
 {
   "name": "shared-ui",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
   "license": "UNLICENSED",
   "workspaces": {
@@ -37,11 +37,6 @@
     "release:minor": "yarn release minor",
     "release:patch": "yarn release patch"
   },
-  "preconstruct": {
-    "packages": [
-      "packages/*"
-    ]
-  },
   "resolutions": {
     "react": "~17.0.2",
     "react-dom": "~17.0.2"
@@ -53,14 +48,12 @@
     "@babel/preset-react": "~7.14.5",
     "@babel/preset-typescript": "~7.15.0",
     "@manypkg/cli": "~0.18.0",
-    "@preconstruct/cli": "~2.1.5",
     "@storybook/addon-actions": "~6.3.8",
     "@storybook/addon-essentials": "~6.3.8",
     "@storybook/addon-links": "~6.3.8",
     "@storybook/addon-storysource": "~6.3.8",
     "@storybook/addons": "~6.3.8",
     "@storybook/node-logger": "~6.3.8",
-    "@storybook/preset-scss": "~1.0.3",
     "@storybook/react": "~6.3.8",
     "@storybook/theming": "~6.3.8",
     "@testing-library/jest-dom": "~5.14.1",
