@@ -10,12 +10,12 @@ module.exports = {
         loose: true,
         modules: isCommonJS ? 'commonjs' : false,
         targets: {
-          esmodules: isESM ? true : undefined,
-        },
-      },
+          esmodules: isESM ? true : undefined
+        }
+      }
     ],
     '@babel/preset-typescript',
-    '@babel/preset-react',
+    '@babel/preset-react'
   ],
   plugins: [
     'babel-plugin-annotate-pure-calls',

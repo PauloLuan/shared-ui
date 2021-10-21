@@ -4,7 +4,6 @@ module.exports = {
     '../packages/**/*.stories.@(js|jsx|ts|tsx)'
   ],
   addons: [
-    '@storybook/preset-scss',
     '@storybook/addon-essentials',
     '@storybook/addon-links',
     '@storybook/addon-storysource'

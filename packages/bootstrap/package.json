@@ -1,0 +1,37 @@
+{
+  "name": "@shared-ui/bootstrap",
+  "version": "0.1.0",
+  "description": "Bootstrap with our customizations",
+  "homepage": "https://github.com/pauloluan/shared-ui/blob/main/packages/bootstrap/README.md",
+  "bugs": {
+    "url": "https://github.com/pauloluan/shared-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauloluan/shared-ui.git",
+    "directory": "packages/bootstrap"
+  },
+  "license": "UNLICENSED",
+  "author": "Paulo Luan <pauloluan.inova@gmail.com>",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "dist/styles.css",
+  "style": "dist/styles.css",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "yarn build:sass --watch",
+    "prebuild": "rimraf dist",
+    "build": "concurrently yarn:build:*",
+    "build:sass": "sass scss/styles.scss:dist/styles.css --no-charset"
+  },
+  "dependencies": {
+    "bootstrap": "4.6.0"
+  },
+  "devDependencies": {
+    "sass": "1.32.13"
+  }
+}
