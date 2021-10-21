@@ -1,6 +1,6 @@
 {
   "name": "@shared-ui/react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "react package containing all shared-ui components",
   "homepage": "https://github.com/pauloluan/shared-ui/blob/main/packages/react/README.md",
   "bugs": {
@@ -35,7 +35,7 @@
     "build:types": "tsc --outDir dist"
   },
   "dependencies": {
-    "@shared-ui/button": "0.0.0"
+    "@shared-ui/button": "0.0.1"
   },
   "devDependencies": {
     "react": "~17.0.2",

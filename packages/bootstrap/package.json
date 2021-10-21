@@ -1,6 +1,6 @@
 {
   "name": "@shared-ui/bootstrap",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Bootstrap with our customizations",
   "homepage": "https://github.com/pauloluan/shared-ui/blob/main/packages/bootstrap/README.md",
   "bugs": {
