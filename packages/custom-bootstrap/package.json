@@ -1,0 +1,49 @@
+{
+  "name": "@shared-ui/custom-bootstrap",
+  "version": "0.1.0",
+  "description": "Bootstrap with our customizations",
+  "homepage": "https://github.com/pauloluan/shared-ui/blob/main/packages/custom-bootstrap/README.md",
+  "bugs": {
+    "url": "https://github.com/pauloluan/shared-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauloluan/shared-ui.git",
+    "directory": "packages/custom-bootstrap"
+  },
+  "license": "UNLICENSED",
+  "author": "Paulo Luan <pauloluan.inova@gmail.com>",
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    "require": "./dist/shared-ui-custom-bootstrap.cjs.js",
+    "default": "./dist/shared-ui-custom-bootstrap.esm.js"
+  },
+  "main": "dist/shared-ui-custom-bootstrap.cjs.js",
+  "module": "dist/shared-ui-custom-bootstrap.esm.js",
+  "types": "dist/shared-ui-custom-bootstrap.cjs.d.ts",
+  "typings": "dist/shared-ui-custom-bootstrap.cjs.d.ts",
+  "style": "dist/styles.css",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "yarn build:sass --watch",
+    "prebuild": "rimraf dist",
+    "build": "concurrently yarn:build:*",
+    "build:esm": "cross-env BABEL_ENV=esm babel src --root-mode upward --extensions .ts -d dist/esm --source-maps",
+    "build:cjs": "cross-env BABEL_ENV=cjs babel src --root-mode upward --extensions .ts -d dist/cjs --source-maps",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:sass": "sass scss/styles.scss:dist/styles.css --no-charset"
+  },
+  "dependencies": {
+    "bootstrap": "4.6.0"
+  },
+  "devDependencies": {
+    "sass": "1.32.13",
+    "sass-loader": "10",
+    "style-loader": "~3.2.1"
+  }
+}

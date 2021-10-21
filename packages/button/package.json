@@ -1,0 +1,47 @@
+{
+  "name": "@shared-ui/button",
+  "version": "0.1.0",
+  "description": "shared-ui button",
+  "homepage": "https://github.com/pauloluan/shared-ui/blob/main/packages/button/README.md",
+  "bugs": {
+    "url": "https://github.com/pauloluan/shared-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauloluan/shared-ui.git",
+    "directory": "packages/button"
+  },
+  "license": "UNLICENSED",
+  "author": "Paulo Luan <pauloluan.inova@gmail.com>",
+  "sideEffects": false,
+  "exports": {
+    "require": "./dist/shared-ui-button.cjs.js",
+    "default": "./dist/shared-ui-button.esm.js"
+  },
+  "main": "dist/shared-ui-button.cjs.js",
+  "module": "dist/shared-ui-button.esm.js",
+  "types": "dist/shared-ui-button.cjs.d.ts",
+  "typings": "dist/shared-ui-button.cjs.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "nodemon --watch src --exec yarn build -e ts,tsx",
+    "prebuild": "rimraf dist",
+    "build": "concurrently yarn:build:*",
+    "build:esm": "cross-env BABEL_ENV=esm babel src --root-mode upward --extensions .ts,.tsx -d dist/esm --source-maps",
+    "build:cjs": "cross-env BABEL_ENV=cjs babel src --root-mode upward --extensions .ts,.tsx -d dist/cjs --source-maps",
+    "build:types": "tsc --emitDeclarationOnly"
+  },
+  "devDependencies": {
+    "react": "~17.0.2",
+    "react-bootstrap": "~1.6.1",
+    "styled-components": "~5.3.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.6",
+    "react-bootstrap": "1.x",
+    "styled-components": ">=5"
+  }
+}
