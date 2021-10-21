@@ -16,8 +16,8 @@
   "sideEffects": [
     "*.css"
   ],
-  "main": "dist/styles.css",
-  "style": "dist/styles.css",
+  "main": "dist/css/bootstrap.css",
+  "style": "dist/css/bootstrap.css",
   "files": [
     "dist",
     "README.md"
@@ -26,7 +26,7 @@
     "start": "yarn build:sass --watch",
     "prebuild": "rimraf dist",
     "build": "concurrently yarn:build:*",
-    "build:sass": "sass scss/styles.scss:dist/styles.css --no-charset"
+    "build:sass": "sass scss/bootstrap.scss:dist/css/bootstrap.css --no-charset"
   },
   "dependencies": {
     "bootstrap": "4.6.0"

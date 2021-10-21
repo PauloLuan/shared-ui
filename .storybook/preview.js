@@ -1,1 +1,1 @@
-import '@shared-ui/bootstrap/dist/styles.css'
+import '@shared-ui/bootstrap/dist/css/bootstrap.css'
