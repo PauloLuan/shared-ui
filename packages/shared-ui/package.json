@@ -1,6 +1,6 @@
 {
   "name": "@pauloluan-ui/shared-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "shared ui lib",
   "keywords": [
     "theme",
@@ -17,10 +17,8 @@
   "typings": "dist/types/index.d.ts",
   "sideEffects": false,
   "exports": {
-    ".": {
-      "require": "./dist/cjs/index.js",
-      "default": "./dist/esm/index.js"
-    }
+    "require": "./dist/cjs/index.js",
+    "default": "./dist/esm/index.js"
   },
   "files": [
     "dist"
